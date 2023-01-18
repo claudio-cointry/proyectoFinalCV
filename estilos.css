@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    min-height: 100vh;
+    background-color: #E6E2C3;
+}
+
+/********************** HEADER*/
+header {
+    background-color: #09223e;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    top: 0%;
+    position: fixed;
+    z-index: 2;
+}
+
+#RenderHeader {
+    position: absolute;
+    opacity: 20%;
+    width: 100%;
+    height: 150px;
+    top: -50px;
+    object-fit: cover;
+    margin: 0;
+}
+
+header > h1 {
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: 13%;
+    right: 5%;
+    text-align: right;
+}
+
+header > h2 {
+    color: #6bbaff;
+    font-size: 15px;
+    position: relative;
+    top: 22%;
+    right: 5%;
+    text-align: right;
+}
+
+/********************** NAV*/
+
+nav {
+    color: white;
+    background-color: #205295;
+    position: fixed;
+    top: 100px;
+    width: 20%;
+    height: 100vh;
+    float: left;
+    z-index: 2;
+    padding: 0;
+}
+
+#titulo-nav {
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 8%;
+    position: relative;
+}
+
+#imagen-nav1{
+    height: 60%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+#titulo-nav>h3 {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+nav>ul {
+    margin: 0%;
+    width: 100%;
+    height: 70%;
+    list-style-type: none;
+    position: relative;
+}
+
+nav li {
+    margin: 0;
+    width: 100%;
+    height: 8%;
+    position: relative;
+}
+
+nav li>a{
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav li:hover{
+    cursor: pointer;
+    background-color: #317cdf;
+}
+
+.listaNav1>a {
+    left: 15%;
+}
+
+.listaNav2>a {
+    left: 25%;
+}
+
+/********************** MAIN*/
+
+main {
+    background-color: #E6E2C3;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+    left: 20%;
+    top: 100px;
+    margin-bottom: 120px;
+    padding: 2%;
+}
+
+main>div{
+    margin-bottom: 40px;
+}
+
+/****** DATOS PERSONALES*/
+
+#datosPersonales {
+    display:flex;
+    width: 100%;
+}
+
+#FotoDePerfil {
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+}
+
+#textoDatosP {
+    display: inline-block;
+    width: 100%;
+}
+
+main h3 {
+    font-weight: 800;
+    margin-bottom: 4px;
+    font-size: large;
+}
+
+hr{
+    height: 3px;
+    background-image: linear-gradient(to right,#09223e,#E6E2C3);
+    width: 80%;
+    margin-bottom: 18px;
+    border: none;
+}
+.datos {
+    list-style-type: none;
+    font-size: medium;
+    margin-bottom: 8px;
+}
+.datos span{
+    font-weight: 800;
+}
+
+/****** EXPERIENCIA*/
+
+main h4 {
+    font-weight: 800;
+    margin-bottom: 4px;
+    margin-top: 15px;
+    font-size: medium;;
+}
+
+main h5 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-size: medium;;
+}
+
+.h5-2 {
+    font-weight: 700;
+    font-size: medium;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+main h6 {
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: small;
+
+}
+
+main p {
+    font-size: small;
+    margin-bottom: 8px;
+    text-align: justify;
+    width: 95%;
+    line-height: 130%;
+}
+
+.contenedorTextoMain {
+    margin-left: 3%;
+}
+
+
+
+/****** PORTFOLIO*/
+
+.carrusel{
+    width: 800px;
+    height: 533px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+
+.carrusel .imagenTotal {
+    width: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center; 
+    object-fit: cover;
+    transition: all .5s ease; 
+    transform: translateX(-0%) ;
+}
+.carrusel .img {
+    width: 25%;
+}
+
+#flechas {
+    position: relative;
+    top: -6em;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flechitas {
+    width: 5em;
+    height: 5em;
+    padding: 1em;
+    opacity: 50%;
+}
+
+.flechitas:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+#flecha1 {
+    position: relative;
+    left: -20%;
+}
+
+#flecha2 {
+    position: relative;
+    left: 20%;
+}
+
+#contadorCarrusel {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    opacity: 60%;
+    font-size: x-large;
+}
+
+
+
+
+
+
+/********************** FOOTER*/
+
+footer {
+    color: white;
+    font-size: small;
+    padding: 20px;
+    background-color: #0A2647;;
+    width: 100%;
+    clear: both;
+    height: 60px;
+    position: relative;
+    bottom: 0px;
+    z-index: 3;
+}
+
+#footer-texto {
+    font-weight: 300;
+}
+
+#footer-irArriba {
+    position: absolute;
+    right: 4%;
+}
+
+#footer-irArriba:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
